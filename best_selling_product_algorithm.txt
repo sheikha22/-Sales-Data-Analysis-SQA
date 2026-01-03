@@ -1,0 +1,13 @@
+SET maxSales = 0
+SET bestProduct = null
+
+FOR each product in salesData
+    IF product.sales > maxSales THEN
+        maxSales = product.sales
+        bestProduct = product
+    ELSE
+        bestProduct = bestProduct
+    END IF
+END FOR
+
+PRINT bestProduct
